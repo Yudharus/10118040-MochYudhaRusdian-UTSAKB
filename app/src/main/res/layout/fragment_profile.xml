@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_marbel"
+    tools:context=".fragment.ProfileFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rakkas_regular"
+            android:text="MAHASISWA DARI KELAS IF-1 YANG HOBBY BERMAIN GAME DENGAN CITA CITA INGIN MENJADI UI/UX DESIGNER."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="15sp"
+            android:textAlignment="center"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_corner_top"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/profile_header"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/interest_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY INTEREST"
+            android:textSize="35dp"
+            android:fontFamily="@font/rakkas_regular"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="10dp"
+            android:layout_below="@+id/interest_title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_wa">
+                <LinearLayout
+                    android:id="@+id/item_wa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                    android:paddingVertical="@dimen/interest_padding_vertical"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="@dimen/interest_number_width"
+                        android:layout_height="@dimen/interest_number_height"
+                        android:background="@drawable/interest_number"
+                        android:gravity="center"
+                        android:src="@drawable/wa"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interest_divider_text"
+                        android:fontFamily="@font/rakkas_regular"
+                        android:text="+6281214720940"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/interest_textSize"/>
+                </LinearLayout>
+                <View
+                    android:layout_below="@+id/item_wa"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/akun_ig"
+                android:layout_below="@id/no_wa"
+                android:layout_marginTop="@dimen/interest_divider">
+                <LinearLayout
+                    android:id="@+id/item_ig"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                    android:paddingVertical="@dimen/interest_padding_vertical"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="@dimen/interest_number_width"
+                        android:layout_height="@dimen/interest_number_height"
+                        android:background="@drawable/interest_number"
+                        android:gravity="center"
+                        android:src="@drawable/ig"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interest_divider_text"
+                        android:fontFamily="@font/rakkas_regular"
+                        android:text="\@yudharuss"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/interest_textSize"/>
+                </LinearLayout>
+                <View
+                    android:layout_below="@+id/item_ig"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_ig"
+                android:layout_below="@id/akun_ig"
+                android:layout_marginTop="@dimen/interest_divider">
+                <LinearLayout
+                    android:id="@+id/item_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                    android:paddingVertical="@dimen/interest_padding_vertical"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="@dimen/interest_number_width"
+                        android:layout_height="@dimen/interest_number_height"
+                        android:background="@drawable/interest_number"
+                        android:gravity="center"
+                        android:src="@drawable/email"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rakkas_regular"
+                        android:text="yudharus007@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_below="@+id/item_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/nav_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="-74dp"
+        android:background="@drawable/bg_profile_nav"
+        android:contentDescription="@string/nav_header_desc"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_circle"
+        android:backgroundTint="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/maps"
+        android:layout_below="@+id/profile_body"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/find_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIND ME"
+            android:fontFamily="@font/rakkas_regular"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+
+            />
+        <View
+            android:id="@+id/google_maps"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/find_me"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/maps"
+            />
+    </RelativeLayout>
+</RelativeLayout>

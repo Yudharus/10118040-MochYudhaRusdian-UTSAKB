@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="home_header_height">200dp</dimen>
+    <!--  Interest Section  -->
+    <dimen name="interest_height">80dp</dimen>
+    <dimen name="interest_padding_horizontal">20dp</dimen>
+    <dimen name="interest_padding_vertical">0dp</dimen>
+    <dimen name="interest_divider">10dp</dimen>
+
+
+    <!--  Interest Details  -->
+    <dimen name="interest_number_height">48dp</dimen>
+    <dimen name="interest_number_width">64dp</dimen>
+
+    <dimen name="interest_description_height">80dp</dimen>
+    <dimen name="interest_description_width">80dp</dimen>
+
+    <dimen name="interest_textSize">20sp</dimen>
+    <dimen name="interest_divider_text">0dp</dimen>
+
+
+    <!--  Daily Section  -->
+    <dimen name="daily_header">300dp</dimen>
+
+
+</resources>

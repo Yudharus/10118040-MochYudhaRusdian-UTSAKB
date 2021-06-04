@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_marbel"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_header_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <ImageView
+            android:id="@+id/nav_profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/profile_circle"
+            android:background="@drawable/bg_profile_nav"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_header_height"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/rakkas_regular"
+            android:text="MOCH YUDHA RUSDIAN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_toRightOf="@+id/nav_profile_image"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_corner_top"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/interest_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY INTEREST"
+            android:textSize="30dp"
+            android:fontFamily="@font/rakkas_regular"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/Text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="10dp"
+            android:layout_below="@+id/interest_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/interest_height"
+                android:orientation="horizontal"
+                android:background="@drawable/interest_background"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                android:paddingVertical="@dimen/interest_padding_vertical"
+                android:backgroundTint="@color/black">
+
+                <TextView
+                    android:layout_width="@dimen/interest_number_width"
+                    android:layout_height="@dimen/interest_number_height"
+                    android:background="@drawable/interest_number"
+                    android:text="1"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:textSize="@dimen/interest_textSize"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interest_divider_text"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:text="UI/UX Designer"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/interest_textSize"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/interest_divider"
+                android:layout_height="@dimen/interest_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/interest_height"
+                android:orientation="horizontal"
+                android:background="@drawable/interest_background"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                android:paddingVertical="@dimen/interest_padding_vertical"
+                android:backgroundTint="@color/black">
+
+                <TextView
+                    android:layout_width="@dimen/interest_number_width"
+                    android:layout_height="@dimen/interest_number_height"
+                    android:background="@drawable/interest_number"
+                    android:text="2"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:textSize="@dimen/interest_textSize"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interest_divider_text"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:text="MUSIC"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/interest_textSize"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/interest_divider"
+                android:layout_height="@dimen/interest_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/interest_height"
+                android:orientation="horizontal"
+                android:background="@drawable/interest_background"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                android:paddingVertical="@dimen/interest_padding_vertical"
+                android:backgroundTint="@color/black">
+
+                <TextView
+                    android:layout_width="@dimen/interest_number_width"
+                    android:layout_height="@dimen/interest_number_height"
+                    android:background="@drawable/interest_number"
+                    android:text="3"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:textSize="@dimen/interest_textSize"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interest_divider_text"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:text="GRAPHIC DESIGN"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/interest_textSize"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/interest_divider"
+                android:layout_height="@dimen/interest_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/interest_height"
+                android:orientation="horizontal"
+                android:background="@drawable/interest_background"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/interest_padding_horizontal"
+                android:paddingVertical="@dimen/interest_padding_vertical"
+                android:backgroundTint="@color/black">
+
+                <TextView
+                    android:layout_width="@dimen/interest_number_width"
+                    android:layout_height="@dimen/interest_number_height"
+                    android:background="@drawable/interest_number"
+                    android:text="4"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:textSize="@dimen/interest_textSize"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interest_divider_text"
+                    android:fontFamily="@font/rakkas_regular"
+                    android:text="GAMES"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/interest_textSize"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

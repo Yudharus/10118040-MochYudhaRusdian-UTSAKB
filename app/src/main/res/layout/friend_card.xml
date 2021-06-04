@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:layout_marginHorizontal="10dp">
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/friend1"
+        android:padding="10dp"/>
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/textItem"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingHorizontal="2dp"
+        android:textColor="@color/Primary"
+        android:fontFamily="@font/rakkas_regular"
+        android:textSize="16sp"
+        android:text="HARIS"
+        android:textAlignment="center"/>
+</LinearLayout>
